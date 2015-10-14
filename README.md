@@ -8,19 +8,19 @@
 ![image](https://github.com/sfdux/screenshots/blob/master/apple_watch_package_04.png)
 <br>
 <br>
-![image](https://github.com/sfdux/screenshots/blob/master/apple_watch_package_05.png)
+![image](https://github.com/sfdux/screenshots/blob/master/apple_watch_package_05.PNG)
 <br>
 <br>
-![image](https://github.com/sfdux/screenshots/blob/master/apple_watch_package_06.png)
+![image](https://github.com/sfdux/screenshots/blob/master/apple_watch_package_06.PNG)
 <br>
 <br>
-![image](https://github.com/sfdux/screenshots/blob/master/apple_watch_package_07.png)
+![image](https://github.com/sfdux/screenshots/blob/master/apple_watch_package_07.PNG)
 <br>
 <br>
-![image](https://github.com/sfdux/screenshots/blob/master/apple_watch_package_08.png)
+![image](https://github.com/sfdux/screenshots/blob/master/apple_watch_package_08.PNG)
 <br>
 <br>
-![image](https://github.com/sfdux/screenshots/blob/master/apple_watch_package_09.png)
+![image](https://github.com/sfdux/screenshots/blob/master/apple_watch_package_09.PNG)
 
 
 
