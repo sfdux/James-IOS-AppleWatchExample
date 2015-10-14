@@ -8,8 +8,21 @@
 
 #import "InterfaceController.h"
 
+typedef enum {
+    MessageSourceIncoming = 1,
+    MessageSourceOutgoing = 2
+} MessageSource;
 
-@interface InterfaceController()
+typedef enum {
+    MessageTypeText = 1,
+    MessageTypeVoice = 2,
+    MessageTypeImage = 3
+} MessageType;
+
+
+@interface InterfaceController(){
+    NSMutableArray *_messages;
+}
 
 @end
 
@@ -18,6 +31,7 @@
 @synthesize labGuess,labResult,timeNow;
 
 int _correct = 5;
+NSString *_correctKey = @"我要红包";
 
 
 - (void)awakeWithContext:(id)context {
@@ -37,15 +51,20 @@ int _correct = 5;
 }
 
 - (IBAction)btnGuess {
-    int value = arc4random() % (10);
-    
-    [labGuess setText:[NSString stringWithFormat:@"您猜的金额是: %d",value]];
-    
-    if(_correct == value){
-        [labResult setText:@"恭喜您，人品爆发，红包是您的啦!"];
-    }else{
-        [labResult setText:@"好遗憾。。。没猜对"];
-    }
+    [self presentTextInputControllerWithSuggestions:@[@"Hello", @"Hi"] allowedInputMode:WKTextInputModeAllowAnimatedEmoji completion:^(NSArray *results) {
+        if (results.count > 0) {
+            NSDictionary *messageDic = @{@"msg":results.firstObject, @"source":@(MessageSourceOutgoing), @"type":@(MessageTypeText)};
+            [labGuess setText:[NSString stringWithFormat:@"口令: %@",messageDic[@"msg"]]];
+            if([messageDic[@"msg"] isEqualToString:_correctKey]){
+                int value = arc4random() % (10);
+                [labResult setText:[NSString stringWithFormat:@"恭喜您，人品爆发，%d元红包是您的啦!",value]];
+            }else{
+                [labResult setText:@"好遗憾。。。红包口令没猜对。"];
+            }
+        
+            
+        }
+    }];
     
 }
 @end
