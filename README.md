@@ -8,6 +8,9 @@
 ![image](https://github.com/sfdux/screenshots/blob/master/apple_watch_package_04.png)
 <br>
 <br>
+![image](https://github.com/sfdux/screenshots/blob/master/apple_watch_package_10.PNG)
+<br>
+<br>
 ![image](https://github.com/sfdux/screenshots/blob/master/apple_watch_package_05.PNG)
 <br>
 <br>
