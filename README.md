@@ -1,4 +1,4 @@
-# James-IOS-AppleWatchExample
+# James-iOS-AppleWatchExample
 仿支付宝口令红包apple watch版
 <br>
 <br>
